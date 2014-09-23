@@ -1,7 +1,7 @@
 Angular Persian Tools
 =====================
 
-Angular Persian Tools is a simple [Angular.js](http://angularjs.org) module which provides a set of useful *Angular Filters*.
+Angular Persian Tools is a simple [Angular.js](http://angularjs.org) module which provides a set of useful *Angular Filters* for Persian Developers.
 
 Installation
 ============
