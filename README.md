@@ -12,7 +12,9 @@ You can install this package using `bower` :
 Usage
 =====
 
-To use this package add `angular-persian-tools` as a dependency to your app module, then you can easily use the tools provided in the package.
+To use this package add `ngPersianTools` as a dependency to your app module, then you can easily use the tools provided in the package.
+
+    var app = angular.module('myApp', ['ngPersianTools', /* Other deps ... */]);
 
 Convert Number to Persian Representation
 -------------------------
