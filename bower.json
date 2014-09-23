@@ -1,0 +1,12 @@
+{
+  "name": "angular-persian-tools",
+  "version": "0.1.0",
+  "main": "angular-persian-tools.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "angular": null,
+  }
+}
