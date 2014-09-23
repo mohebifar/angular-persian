@@ -7,6 +7,6 @@
     "**/*.txt"
   ],
   "dependencies": {
-    "angular": null,
+    "angular": null
   }
 }
