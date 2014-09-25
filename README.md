@@ -16,10 +16,15 @@ To use this package add `ngPersianTools` as a dependency to your app module, the
 
     var app = angular.module('myApp', ['ngPersianTools', /* Other deps ... */]);
 
-Convert Number to Persian Representation
+Convert Numbers to Persian Representation
 -------------------------
 
-To convert the numbers to persian form, you can use `pnumber` filter, for example :
+You can use `pnumber` filter to convert the numbers to persian form :
 
     {{ product.price | pnumber }}
     <!-- e.g. Raw value: 2500, Output: ۲۵۰۰ -->
+
+You can mix this filter with `currency` and `number` filters :
+
+    {{ product.price | currency | pnumber }}
+    {{ product.quantity | number | pnumber }}
