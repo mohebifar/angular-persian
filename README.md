@@ -7,7 +7,7 @@ Installation
 ============
 You can install this package using `bower` :
 
-	bower install angular-persian-tools
+	bower install angular-persian-tools --save
 
 Usage
 =====
