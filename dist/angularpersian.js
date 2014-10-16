@@ -68,11 +68,7 @@
           return _results1;
         })();
         resultThree = resultThree.join(delimiter);
-        if (iThree === 0) {
-          _results.push(resultThree);
-        } else {
-          _results.push(resultThree + ' ' + parts[str.length - iThree - 1]);
-        }
+        _results.push(resultThree + ' ' + parts[str.length - iThree - 1]);
       }
       return _results;
     })();

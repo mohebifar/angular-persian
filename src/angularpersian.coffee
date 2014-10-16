@@ -38,7 +38,6 @@ ngPersian.filter "pDigitWords", (str) ->
 
   delimiter = ' و '
 
-
   str =
     str
     .split ''
@@ -62,11 +61,13 @@ ngPersian.filter "pDigitWords", (str) ->
         continue
 
     resultThree = resultThree.join delimiter
-    if iThree == 0 then resultThree else resultThree + ' ' + parts[str.length - iThree - 1]
+    resultThree + ' ' + parts[str.length - iThree - 1]
 
   result = result.filter (x) ->
     x.trim() != ''
 
-  result = result.join(delimiter).trim()
+  result = result
+  .join delimiter
+  .trim()
 
   if result != '' then result else numbers.zero
