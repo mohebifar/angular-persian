@@ -1,25 +1,50 @@
-Angular Persian Tools
-=====================
+# AngularJS Filters for pesian language localization.
 
-Angular Persian Tools is a simple [Angular.js](http://angularjs.org) module which provides a set of useful *Angular Filters* for Persian Developers.
+[TODO - brief summary]
 
-Installation
-============
-You can install this package using `bower` :
+## Demo
+http://mohebifar.github.io/angular-persian-tools/
 
-	bower install angular-persian-tools
+## Dependencies
+- required:
+	[TODO]
+- optional
+	[TODO]
 
-Usage
-=====
+See `bower.json` and `index.html` in the `gh-pages` branch for a full list / more details
 
-To use this package add `ngPersianTools` as a dependency to your app module, then you can easily use the tools provided in the package.
+## Install
+1. download the files
+	1. Bower
+		1. add `"angular-persian-tools": "latest"` to your `bower.json` file then run `bower install` OR run `bower install angular-persian-tools`
+2. include the files in your app
+	1. `persian-tools.min.js`
+3. include the module in angular (i.e. in `app.js`) - `mohebifar.angular-persian-tools`
 
-    var app = angular.module('myApp', ['ngPersianTools', /* Other deps ... */]);
+See the `gh-pages` branch, files `bower.json` and `index.html` for a full example.
 
-Convert Number to Persian Representation
--------------------------
 
-To convert the numbers to persian form, you can use `pnumber` filter, for example :
+## Documentation
+See the `persian-tools.js` file top comments for usage examples and documentation
+https://github.com/mohebifar/angular-persian-tools/blob/master/persian-tools.js
 
-    {{ product.price | pnumber }}
-    <!-- e.g. Raw value: 2500, Output: ۲۵۰۰ -->
+
+## Development
+
+1. `git checkout gh-pages`
+	1. run `npm install && bower install`
+	2. write your code then run `grunt`
+	3. git commit your changes
+2. copy over core files (.js and .css/.less for directives) to master branch
+	1. `git checkout master`
+	2. `git checkout gh-pages persian-tools.js persian-tools.min.js persian-tools.less persian-tools.css persian-tools.min.css`
+3. update README, CHANGELOG, bower.json, and do any other final polishing to prepare for publishing
+	1. git commit changes
+	2. git tag with the version number, i.e. `git tag v1.0.0`
+4. create github repo and push
+	1. [if remote does not already exist or is incorrect] `git remote add origin [github url]`
+	2. `git push origin master --tags` (want to push master branch first so it is the default on github)
+	3. `git checkout gh-pages`
+	4. `git push origin gh-pages`
+5. (optional) register bower component
+	1. `bower register angular-persian-tools [git repo url]`

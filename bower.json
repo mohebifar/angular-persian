@@ -1,12 +1,27 @@
 {
-  "name": "angular-persian-tools",
-  "version": "0.1.0",
-  "main": "angular-persian-tools.js",
-  "ignore": [
-    ".jshintrc",
-    "**/*.txt"
-  ],
-  "dependencies": {
-    "angular": null
-  }
+	"name": "angular-persian-tools",
+	"version": "1.0.0",
+	"authors": [
+		"netfars@gmail.com"
+	],
+	"description": "AngularJS Filters for pesian language localization.",
+	"keywords": [
+		"angularjs",
+		"persian",
+		"farsi",
+		"digits"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"angular":"~1.2.0"
+	},
+	"devDependencies": {
+	}
 }
