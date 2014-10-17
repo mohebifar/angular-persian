@@ -2,14 +2,15 @@
   "name": "angular-persian-tools",
   "version": "0.0.0",
   "dependencies": {},
-  "devDependencies" : {
-    "mocha" : "*",
-    "chai" : "*",
-    "sinon" : "*",
-    "grunt" : "*",
+  "devDependencies": {
+    "chai": "*",
+    "grunt": "*",
     "grunt-contrib-coffee": "*",
     "grunt-contrib-uglify": "*",
+    "grunt-mocha-phantomjs": "^0.6.0",
+    "grunt-mocha-test": "*",
     "matchdep": "*",
-    "grunt-mocha-test": "*"
+    "mocha": "*",
+    "sinon": "*"
   }
 }

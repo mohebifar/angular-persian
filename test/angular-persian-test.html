@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div id="mocha"></div>
+<div ng-app="myApp">
+    <ul>
+        <li>
+            <span id="arabiNumber">{{ '١٢٣٤٥٦٧٨٩٠' | pArabicNumber }}</span>
+        </li>
+        <li>
+            <span id="arabiChar">{{ 'يك‍دِبِزِذِشِسِ‌ى' | pArabicChar }}</span>
+        </li>
+        <li>
+            <span id="number">{{ '1234567890' | pNumber }}</span>
+        </li>
+        <li>
+            <span id="switchKey">{{ 'لخخلمث' | pSwitchKey }}</span>
+        </li>
+        <li>
+            <span id="fixUrl">{{ 'https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C' | pFixURL }}</span>
+        </li>
+        <li>
+            <span id="digitWords">{{ '2619' | pDigitWords }}</span>
+        </li>
+    </ul>
+</div>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script src="../node_modules/chai/chai.js"></script>
+<script>
+    mocha.ui('bdd');
+    mocha.reporter('html');
+    expect = chai.expect;
+</script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/persianjs/persian.js"></script>
+<script src="../dist/angularpersian.js"></script>
+<script>
+    angular.module('myApp', ['ngPersian']);
+</script>
+<script src="all.js"></script>
+<script>
+    if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+    }
+    else {
+        mocha.run();
+    }
+</script>
+</body>
+</html>
