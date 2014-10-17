@@ -1,4 +1,4 @@
-#  [![Build Status](https://secure.travis-ci.org/mohebifar/chemjs.png?branch=master)](http://travis-ci.org/mohebifar/chemjs)
+#  [![Build Status](https://secure.travis-ci.org/mohebifar/angular-persian.png?branch=master)](http://travis-ci.org/mohebifar/angular-persian)
 
 AngularPersian is a simple [Angular.js](http://angularjs.org) module which provides a set of useful *Angular Filters* for Persian localization.
 
