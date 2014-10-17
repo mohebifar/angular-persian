@@ -7,5 +7,5 @@ before_install:
   - npm install
   - bower install
 
-before_script: grunt build
+before_script: grunt default
 script: grunt mocha_phantomjs
