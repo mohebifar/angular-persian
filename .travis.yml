@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "0.8"
+before_install:
+  - npm install -g grunt-cli
+  - npm install -g bower
+  - npm install
+  - bower install
+
+before_script: grunt build
+script: grunt mocha_phantomjs
