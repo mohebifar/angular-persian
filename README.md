@@ -2,7 +2,7 @@
 
 AngularPersian is a simple [Angular.js](http://angularjs.org) module which provides a set of useful *Angular Filters* for Persian localization.
 
-AngluarPersian is built on top of [uusablica/persian.js](https://github.com/usablica/persian.js).
+AngluarPersian uses [uusablica/persian.js](https://github.com/usablica/persian.js).
 
 Installation
 ============
