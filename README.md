@@ -23,7 +23,7 @@ Convert Numbers to Persian Digits
 
 You can use `pNumber` filter to convert the digits to persian form :
 
-    {{ product.price | pnumber }}
+    {{ product.price | pNumber }}
     <!-- e.g. Raw value: 36590, Output: ۳۶۵۹۰ -->
 
 You can mix this filter with `currency` and `number` filters :
