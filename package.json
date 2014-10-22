@@ -10,7 +10,7 @@
     "grunt-mocha-phantomjs": "^0.6.0",
     "grunt-mocha-test": "*",
     "matchdep": "*",
-    "mocha": "*",
+    "mocha": "1.20.0",
     "sinon": "*"
   }
 }
