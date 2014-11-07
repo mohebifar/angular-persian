@@ -1,4 +1,4 @@
-#[![Build Status](https://secure.travis-ci.org/mohebifar/angular-persian.png)](http://travis-ci.org/mohebifar/angular-persian) [![Dependency Status](https://www.versioneye.com/user/projects/5446a1f544a52544fe000047/badge.png)](https://www.versioneye.com/user/projects/5446a1f544a52544fe000047)
+#[![Build Status](http://img.shields.io/travis/mohebifar/angular-persian.svg?style=flat)](http://travis-ci.org/mohebifar/angular-persian) [![Dependency Status](https://www.versioneye.com/user/projects/5446a1f544a52544fe000047/badge.png?style=flat)](https://www.versioneye.com/user/projects/5446a1f544a52544fe000047) [![License](http://img.shields.io/:license-mit-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 AngularPersian is a simple [Angular.js](http://angularjs.org) module which provides a set of useful *Angular Filters* for Persian localization.
 
