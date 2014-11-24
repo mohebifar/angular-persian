@@ -4,33 +4,48 @@ console.error "Persian.js is required for using Angular Persian" if not persianJ
 
 ngPersian.filter "pNumber", ->
   (str) ->
-    persianJs str
-    .englishNumber()
-    .toString()
+    if str.trim() != ""
+      persianJs str
+      .englishNumber()
+      .toString()
+    else
+      ""
 
 ngPersian.filter "pArabicNumber", ->
   (str) ->
-    persianJs str
-    .arabicNumber()
-    .toString()
+    if str.trim() != ""
+      persianJs str
+      .arabicNumber()
+      .toString()
+    else
+      ""
 
 ngPersian.filter "pSwitchKey", ->
   (str) ->
-    persianJs str
-    .switchKey()
-    .toString()
+    if str.trim() != ""
+      persianJs str
+      .switchKey()
+      .toString()
+    else
+      ""
 
 ngPersian.filter "pFixURL", ->
-  (str) ->
-    persianJs str
-    .fixURL()
-    .toString()
+  if str.trim() != ""
+    (str) ->
+      persianJs str
+      .fixURL()
+      .toString()
+  else
+    ""
 
 ngPersian.filter "pArabicChar", ->
-  (str) ->
-    persianJs str
-    .arabicChar()
-    .toString()
+  if str.trim() != ""
+    (str) ->
+      persianJs str
+      .arabicChar()
+      .toString()
+  else
+    ""
 
 ngPersian.filter "pDigitWords", ->
   (str) ->

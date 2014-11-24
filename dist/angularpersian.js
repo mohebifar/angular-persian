@@ -9,32 +9,52 @@
 
   ngPersian.filter("pNumber", function() {
     return function(str) {
-      return persianJs(str).englishNumber().toString();
+      if (str.trim() !== "") {
+        return persianJs(str).englishNumber().toString();
+      } else {
+        return "";
+      }
     };
   });
 
   ngPersian.filter("pArabicNumber", function() {
     return function(str) {
-      return persianJs(str).arabicNumber().toString();
+      if (str.trim() !== "") {
+        return persianJs(str).arabicNumber().toString();
+      } else {
+        return "";
+      }
     };
   });
 
   ngPersian.filter("pSwitchKey", function() {
     return function(str) {
-      return persianJs(str).switchKey().toString();
+      if (str.trim() !== "") {
+        return persianJs(str).switchKey().toString();
+      } else {
+        return "";
+      }
     };
   });
 
   ngPersian.filter("pFixURL", function() {
-    return function(str) {
-      return persianJs(str).fixURL().toString();
-    };
+    if (str.trim() !== "") {
+      return function(str) {
+        return persianJs(str).fixURL().toString();
+      };
+    } else {
+      return "";
+    }
   });
 
   ngPersian.filter("pArabicChar", function() {
-    return function(str) {
-      return persianJs(str).arabicChar().toString();
-    };
+    if (str.trim() !== "") {
+      return function(str) {
+        return persianJs(str).arabicChar().toString();
+      };
+    } else {
+      return "";
+    }
   });
 
   ngPersian.filter("pDigitWords", function() {
