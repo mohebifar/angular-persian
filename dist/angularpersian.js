@@ -9,8 +9,8 @@
 
   ngPersian.filter("pNumber", function() {
     return function(str) {
-      if (str.trim() !== "") {
-        return persianJs(str).englishNumber().toString();
+      if (str.toString().trim() !== "") {
+        return persianJs(str.toString()).englishNumber().toString();
       } else {
         return "";
       }
@@ -38,23 +38,23 @@
   });
 
   ngPersian.filter("pFixURL", function() {
-    if (str.trim() !== "") {
-      return function(str) {
+    return function(str) {
+      if (str.trim() !== "") {
         return persianJs(str).fixURL().toString();
-      };
-    } else {
-      return "";
-    }
+      } else {
+        return "";
+      }
+    };
   });
 
   ngPersian.filter("pArabicChar", function() {
-    if (str.trim() !== "") {
-      return function(str) {
+    return function(str) {
+      if (str.trim() !== "") {
         return persianJs(str).arabicChar().toString();
-      };
-    } else {
-      return "";
-    }
+      } else {
+        return "";
+      }
+    };
   });
 
   ngPersian.filter("pDigitWords", function() {
