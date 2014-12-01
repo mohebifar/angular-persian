@@ -9,7 +9,7 @@
 
   ngPersian.filter("pNumber", function() {
     return function(str) {
-      if ((str != null ? str.toString().trim() : void 0) !== "") {
+      if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).englishNumber().toString();
       } else {
         return "";
@@ -19,7 +19,7 @@
 
   ngPersian.filter("pArabicNumber", function() {
     return function(str) {
-      if ((str != null ? str.toString().trim() : void 0) !== "") {
+      if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).arabicNumber().toString();
       } else {
         return "";
@@ -29,7 +29,7 @@
 
   ngPersian.filter("pSwitchKey", function() {
     return function(str) {
-      if ((str != null ? str.toString().trim() : void 0) !== "") {
+      if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).switchKey().toString();
       } else {
         return "";
@@ -39,7 +39,7 @@
 
   ngPersian.filter("pFixURL", function() {
     return function(str) {
-      if ((str != null ? str.toString().trim() : void 0) !== "") {
+      if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).fixURL().toString();
       } else {
         return "";
@@ -49,7 +49,7 @@
 
   ngPersian.filter("pArabicChar", function() {
     return function(str) {
-      if ((str != null ? str.toString().trim() : void 0) !== "") {
+      if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).arabicChar().toString();
       } else {
         return "";

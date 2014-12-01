@@ -2,7 +2,7 @@
   "name": "angular-persian",
   "description": "Angular Persian is an AngularJS Module which provides a set of filters for persian localization.",
   "main": "dist/angularpersian.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "dependencies": {
     "angular": "~1.3.0",
     "persianjs": "~0.3.0"
