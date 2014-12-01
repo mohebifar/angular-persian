@@ -4,7 +4,7 @@ console.error "Persian.js is required for using Angular Persian" if not persianJ
 
 ngPersian.filter "pNumber", ->
   (str) ->
-    if str.toString().trim() != ""
+    if str?.toString().trim() != ""
       persianJs str.toString()
       .englishNumber()
       .toString()
@@ -13,7 +13,7 @@ ngPersian.filter "pNumber", ->
 
 ngPersian.filter "pArabicNumber", ->
   (str) ->
-    if str.toString().trim() != ""
+    if str?.toString().trim() != ""
       persianJs str.toString()
       .arabicNumber()
       .toString()
@@ -22,7 +22,7 @@ ngPersian.filter "pArabicNumber", ->
 
 ngPersian.filter "pSwitchKey", ->
   (str) ->
-    if str.toString().trim() != ""
+    if str?.toString().trim() != ""
       persianJs str.toString()
       .switchKey()
       .toString()
@@ -31,7 +31,7 @@ ngPersian.filter "pSwitchKey", ->
 
 ngPersian.filter "pFixURL", ->
   (str) ->
-    if str.toString().trim() != ""
+    if str?.toString().trim() != ""
       persianJs str.toString()
       .fixURL()
       .toString()
@@ -40,7 +40,7 @@ ngPersian.filter "pFixURL", ->
 
 ngPersian.filter "pArabicChar", ->
   (str) ->
-    if str.toString().trim() != ""
+    if str?.toString().trim() != ""
       persianJs str.toString()
       .arabicChar()
       .toString()
