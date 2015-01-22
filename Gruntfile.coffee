@@ -1,4 +1,3 @@
-# Generated on 2014-10-16 using generator-bower 0.0.1
 'use strict'
 
 mountFolder = (connect, dir) ->
