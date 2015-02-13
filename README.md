@@ -6,10 +6,17 @@ AngluarPersian uses [usablica/persian.js](https://github.com/usablica/persian.js
 
 Installation
 ============
-You can install this package using `bower` :
+You can install this package using `bower`.
 
 ```bash
 bower install angular-persian
+```
+
+Refer all dependencies in your page in right order.
+
+```html
+<script src="bower_components/persianjs/persian.js"></script>
+<script src="bower_components/angular-persian/dist/angularpersian.js"></script>
 ```
 
 Usage
