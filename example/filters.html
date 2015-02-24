@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body ng-app="myApp">
+
+<p>
+  This is a test of persian numbers:
+  <span>{{ 1234567890 | pNumber }}</span>
+</p>
+
+<p>
+  This is a test of persian representation for numbers:
+  <span>{{ 1234567890 | pDigitWords }}</span>
+</p>
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/persianjs/persian.js"></script>
+<script src="../dist/angularpersian.js"></script>
+<script>
+  angular.module('myApp', ['ngPersian']);
+</script>
+</body>
+</html>
