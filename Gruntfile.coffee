@@ -13,7 +13,6 @@ module.exports = (grunt) ->
   grunt.initConfig
     yeoman: yeomanConfig
 
-    
     coffee:
       dist:
         files: [
@@ -30,7 +29,7 @@ module.exports = (grunt) ->
     mocha_phantomjs:
       options:
         reporter: 'xunit',
-        output: 'tests/results/result.xml'
+        output: 'test/results/result.xml'
       all: ['test/**/*.html']
 
     grunt.registerTask 'default', [
