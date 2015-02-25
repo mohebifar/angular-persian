@@ -7,58 +7,43 @@
     console.error("Persian.js is required for using Angular Persian");
   }
 
-  ngPersian.filter("pNumber", function() {
-    return function(str) {
+  ngPersian.fn = {
+    pNumber: function(str) {
       if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).englishNumber().toString();
       } else {
         return "";
       }
-    };
-  });
-
-  ngPersian.filter("pArabicNumber", function() {
-    return function(str) {
+    },
+    pArabicNumber: function(str) {
       if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).arabicNumber().toString();
       } else {
         return "";
       }
-    };
-  });
-
-  ngPersian.filter("pSwitchKey", function() {
-    return function(str) {
+    },
+    pSwitchKey: function(str) {
       if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).switchKey().toString();
       } else {
         return "";
       }
-    };
-  });
-
-  ngPersian.filter("pFixURL", function() {
-    return function(str) {
+    },
+    pFixURL: function(str) {
       if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).fixURL().toString();
       } else {
         return "";
       }
-    };
-  });
-
-  ngPersian.filter("pArabicChar", function() {
-    return function(str) {
+    },
+    pArabicChar: function(str) {
       if ((str != null) && str.toString().trim() !== "") {
         return persianJs(str.toString()).arabicChar().toString();
       } else {
         return "";
       }
-    };
-  });
-
-  ngPersian.filter("pDigitWords", function() {
-    return function(str) {
+    },
+    pDigitWords: function(str) {
       var delimiter, digit, i, iThree, numbers, parts, result, resultThree, three;
       if (!isFinite(str)) {
         return '';
@@ -112,7 +97,31 @@
       } else {
         return numbers.zero;
       }
-    };
+    }
+  };
+
+  ngPersian.filter("pNumber", function() {
+    return ngPersian.fn.pNumber;
+  });
+
+  ngPersian.filter("pArabicNumber", function() {
+    return ngPersian.fn.pArabicNumber;
+  });
+
+  ngPersian.filter("pSwitchKey", function() {
+    return ngPersian.fn.pSwitchKey;
+  });
+
+  ngPersian.filter("pFixURL", function() {
+    return ngPersian.fn.pFixURL;
+  });
+
+  ngPersian.filter("pArabicChar", function() {
+    return ngPersian.fn.pArabicChar;
+  });
+
+  ngPersian.filter("pDigitWords", function() {
+    return ngPersian.fn.pDigitWords;
   });
 
 }).call(this);
