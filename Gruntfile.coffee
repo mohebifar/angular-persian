@@ -8,7 +8,8 @@ module.exports = (grunt) ->
 
   yeomanConfig =
     src: 'src'
-    dist : 'dist'
+    dist: 'dist'
+    tmp: '.tmp'
 
   grunt.initConfig
     yeoman: yeomanConfig
@@ -17,11 +18,15 @@ module.exports = (grunt) ->
       dist:
         files: [
           expand: true
-          cwd: '<%= yeoman.src %>'
+          cwd: '<%= yeoman.tmp %>'
           src: '{,*/}*.coffee'
           dest: '<%= yeoman.dist %>'
           ext: '.js'
         ]
+    concat:
+      dist:
+        src: ['<%= yeoman.src %>/module.coffee', '<%= yeoman.src %>/fn/*.coffee', '<%= yeoman.src %>/filters.coffee']
+        dest: '<%= yeoman.tmp %>/angularpersian.coffee'
     uglify:
       build:
         src: '<%=yeoman.dist %>/angularpersian.js'
@@ -33,7 +38,15 @@ module.exports = (grunt) ->
       all: ['test/**/*.html']
 
     grunt.registerTask 'default', [
-      'mocha_phantomjs'
+      'concat'
       'coffee'
+    ]
+
+    grunt.registerTask 'build', [
+      'default'
       'uglify'
+    ]
+
+    grunt.registerTask 'test', [
+      'mocha_phantomjs'
     ]

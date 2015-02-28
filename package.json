@@ -6,6 +6,7 @@
     "chai": "*",
     "grunt": "*",
     "grunt-contrib-coffee": "*",
+    "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-uglify": "*",
     "grunt-mocha-phantomjs": "^0.6.0",
     "grunt-mocha-test": "*",
