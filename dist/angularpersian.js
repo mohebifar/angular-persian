@@ -35,7 +35,7 @@
     }
     parts = ['', 'هزار', 'میلیون', 'میلیارد', 'تریلیون', 'کوادریلیون', 'کویینتیلیون', 'سکستیلیون'];
     numbers = {
-      0: ['', 'صد', 'دویصت', 'سیصد', 'چهارصد', 'پانصد', 'ششصد', 'هفتصد', 'هشتصد', 'نهصد'],
+      0: ['', 'صد', 'دویست', 'سیصد', 'چهارصد', 'پانصد', 'ششصد', 'هفتصد', 'هشتصد', 'نهصد'],
       1: ['', 'ده', 'بیست', 'سی', 'چهل', 'پنجاه', 'شصت', 'هفتاد', 'هشتاد', 'نود'],
       2: ['', 'یک', 'دو', 'سه', 'چهار', 'پنج', 'شش', 'هفت', 'هشت', 'نه'],
       two: ['ده', 'یازده', 'دوازده', 'سیزده', 'چهارده', 'پانزده', 'شانزده', 'هفده', 'هجده', 'نوزده'],
@@ -46,29 +46,29 @@
       return Array(4 - str.length).join('0') + str;
     });
     result = (function() {
-      var _results;
-      _results = [];
+      var results;
+      results = [];
       for (iThree in str) {
         three = str[iThree];
         resultThree = (function() {
-          var _i, _len, _results1;
-          _results1 = [];
-          for (i = _i = 0, _len = three.length; _i < _len; i = ++_i) {
+          var j, len, results1;
+          results1 = [];
+          for (i = j = 0, len = three.length; j < len; i = ++j) {
             digit = three[i];
             if (i === 1 && digit === '1') {
-              _results1.push(numbers.two[three[2]]);
+              results1.push(numbers.two[three[2]]);
             } else if ((i !== 2 || three[1] !== '1') && numbers[i][digit] !== '') {
-              _results1.push(numbers[i][digit]);
+              results1.push(numbers[i][digit]);
             } else {
               continue;
             }
           }
-          return _results1;
+          return results1;
         })();
         resultThree = resultThree.join(delimiter);
-        _results.push(resultThree + ' ' + parts[str.length - iThree - 1]);
+        results.push(resultThree + ' ' + parts[str.length - iThree - 1]);
       }
-      return _results;
+      return results;
     })();
     result = result.filter(function(x) {
       return x.trim() !== '';
