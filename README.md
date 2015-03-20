@@ -19,6 +19,8 @@ Refer all dependencies in your page in right order.
 <script src="bower_components/angular-persian/dist/angularpersian.js"></script>
 ```
 
+Also you can get the package using `npm`.
+
 Usage
 =====
 
