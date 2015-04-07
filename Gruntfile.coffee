@@ -11,6 +11,7 @@ module.exports = (grunt) ->
     dist: 'dist'
     tmp: '.tmp'
 
+
   grunt.initConfig
     yeoman: yeomanConfig
 
