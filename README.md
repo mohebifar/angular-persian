@@ -9,7 +9,7 @@ Installation
 You can install this package using `bower` :
 
 	bower install angular-persian
-
+	
 Usage
 =====
 
@@ -62,3 +62,4 @@ You can use `pArabicNumber` to fix arabic number characters and `pArabicChar` to
 
     {{ "علي٤2465" | pArabicNumber | pArabicChar | pNumber }}
     <!-- output: علی۴۲۴۶۵ -->
+
