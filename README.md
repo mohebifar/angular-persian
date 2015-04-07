@@ -83,3 +83,4 @@ You can use `pArabicNumber` to fix arabic number characters and `pArabicChar` to
 {{ "علي٤2465" | pArabicNumber | pArabicChar | pNumber }}
 <!-- output: علی۴۲۴۶۵ -->
 ```
+
