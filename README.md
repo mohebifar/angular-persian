@@ -40,7 +40,7 @@ You can use `pNumber` filter to convert the digits to persian form :
 <!-- e.g. Raw value: 36590, Output: ۳۶۵۹۰ -->
 ```
 
-You can mix this filter with `currency` and `number` filters :
+You can compose this filter with `currency` and `number` filters :
 
 ```html
 {{ product.price | currency | pNumber }}
