@@ -26,7 +26,7 @@
   };
 
   ngPersian.fn.pDigitWords = function(str) {
-    var delimiter, digit, i, iThree, numbers, parts, result, resultThree, three;
+    var delimiter, digit, i, iThree, numbers, part, parts, result, resultThree, three;
     if (!isFinite(str)) {
       return '';
     }
@@ -66,7 +66,8 @@
           return results1;
         })();
         resultThree = resultThree.join(delimiter);
-        results.push(resultThree + ' ' + parts[str.length - iThree - 1]);
+        part = resultThree.length > 0 ? ' ' + parts[str.length - iThree - 1] : '';
+        results.push(resultThree + part);
       }
       return results;
     })();

@@ -38,7 +38,8 @@ ngPersian.fn.pDigitWords = (str) ->
         continue
 
     resultThree = resultThree.join delimiter
-    resultThree + ' ' + parts[str.length - iThree - 1]
+    part = if resultThree.length > 0 then ' ' + parts[str.length - iThree - 1] else ''
+    resultThree + part
 
   result = result.filter (x) ->
     x.trim() != ''
